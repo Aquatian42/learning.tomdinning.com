@@ -1,3 +1,76 @@
-div {
-    color:blueviolet
+h3 {
+    color:grey
+}
+
+.green {
+    color:green
+}
+
+.blue {
+    color:blue
+}
+
+.red {
+    color:red
+}
+
+#title {
+    color:darkblue
+}
+
+.one,
+.two {
+    color:aqua;
+    background-color:black ;
+}
+
+.one{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.two{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.bullet.first{
+    color:antiquewhite;
+    background-color: blueviolet;
+}
+
+.bullet.second{
+    border-color: chartreuse;
+    background-color: red;
+}
+
+.bullet#third_bullet_point{
+    color: darkseagreen;
+}
+
+.div .child{
+    background-color: burlywood;
+    color:rgb(255,0,0,0.5);
+}
+
+.tnr10{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+
+.cba{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.small{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    font-weight: 100px;
+}
+
+img {
+    max-height: fit-content;
+    max-width: fit-content;
 }

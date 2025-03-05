@@ -7,8 +7,44 @@
     <link rel="stylesheet" href="/CSS/styles.css">
 </head>
 <body>
-    <h1>Cascading Style Sheets</h1>
-    <div>Purple</div>
-    <p>Green</p>
+    <h1 id="title">Cascading Style Sheets</h1>
+    <h3>Colours:</h3>
+    <ol>
+        <li class="green">Green</li>
+        <li class="blue">Blue</li>
+        <li class="red">Red</li>
+    </ol>
+    <h3>Fonts</h3>
+    <ul>
+        <li class="tnr10">10px "Times New Roman"</li>
+        <li class="cba">centre aligned bold Arial</li>
+        <li class="small">small gothic skinny text</li>
+    </ul>
+    <h3>Using multiple selectors</h3>
+    <h4>Grouping selector</h4>
+    <ol>
+        <li class="one">
+            <p>This text has the same background and font as the next bullet point.</p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae voluptatem quisquam eius cupiditate, corrupti harum similique, odit voluptas earum accusamus hic molestiae. Non voluptatibus laboriosam nostrum velit aperiam beatae.
+        </li>
+        <li class="two">
+            <p>But they have different fonts.</p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus recusandae voluptatem quisquam eius cupiditate, corrupti harum similique, odit voluptas earum accusamus hic molestiae. Non voluptatibus laboriosam nostrum velit aperiam beatae.
+        </li>
+    </ol>
+    <h4>Chaining</h4>
+    <ul>
+        <li class="bullet first">This looks how it does because it has two classes</li>
+        <li class="bullet second">Same here, these bullet points share a class but look totally different</li>
+        <li class="bullet" id="third_bullet_point">This has a shared class but different id</li>
+    </ul>
+    <h4>Descendant combinator</h4>
+    <div class="div">
+        <p class="child">This is a "child" class inside of a class. So it looks like this</p>
+        <p class="child">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, minus! Laborum quo aliquam tenetur corporis, cum dolorum repellat, placeat eligendi vero commodi quis harum reprehenderit ab nemo omnis deleniti. Atque!</p>
+    </div>
+    <h3>Images</h3>
+    <img src="/CSS/Harold-Meme-Original.jpg">
+    <p><a href="../">Back to home</a></p>
 </body>
 </html>
