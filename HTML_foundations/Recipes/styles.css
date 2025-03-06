@@ -1,0 +1,17 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: darkkhaki;
+    text-indent: -10px;
+    font-size:16px;
+}
+
+h1{
+    background-color:aqua;
+    text-align: center;
+    text-indent: 0px;
+}
+
+img{
+    image-rendering: optimizeQuality;
+    width:"device-width"
+}

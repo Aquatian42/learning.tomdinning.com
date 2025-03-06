@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the cascade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h1>The Cascade</h1>
+        <h2>Inheritance</h2>
+        <p>Some styles are inherited by child elements. For example, all of the text in this div is the same font. Typographic sytles are usually inherited while others usually aren't.</p>
+        <h2>Specificity</h2>
+        <p>In cases where two conflicting styles apply to one element; more specific rules are applied over less specific rules. More selectors will also take precedence over fewer selectors.</p>
+        <ol>
+            <li>ID selectors</li>
+            <li>Class selectors</li>
+            <li>Type selectors</li>
+            <li>Other selectors (like * - which has no specificity )</li>
+        </ol>
+        <p>Any level of specificity will override inheritance</p>
+        <p>In the case of a conflict of specificity after all of these rules, the rule that was defined <strong><em>last</em></strong> in the css file (or the HTML file) witt be applied.</p>
+        <button><a href="01-cascade-fix">Cascade Fix</a></button>
+        <button><a href="/HTML_foundations/Recipes">Recipes</a></button>
+        <p></p>
+        <button><a href="../">Back to CSS foundations</a></button>
+    </div>
+</body>
+</html>
