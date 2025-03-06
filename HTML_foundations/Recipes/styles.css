@@ -16,3 +16,7 @@ img{
     width: 10px;
     height:auto
 }
+
+li .a_link{
+    font-style: oblique;
+}
