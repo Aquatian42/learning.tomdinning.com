@@ -13,5 +13,6 @@ h1{
 
 img{
     image-rendering: optimizeQuality;
-    width:"device-width"
+    width: 1000px;
+    height:auto
 }
