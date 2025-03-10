@@ -1,0 +1,21 @@
+div *{
+    margin:8px;
+    background-color: rgb(157, 217, 252);
+    padding:8px;
+}
+
+.content, .button-container{
+    font-size: x-large;
+}
+
+.button-container{
+    text-align: center;
+}
+
+button{
+    display: block;
+    margin:0 auto;
+    background-color: white;
+    border: 0px white;
+}
+
