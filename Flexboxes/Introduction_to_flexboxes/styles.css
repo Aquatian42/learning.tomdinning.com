@@ -67,13 +67,20 @@ h1{
     justify-content: center;
 }
 .header{
-    border:white solid 2px;
     width:80%;
-    height:500px;
+    height:300px;
     display:flex;
     justify-content:center;
     align-items: center;
 }
 .header *{
     margin:0 auto;
+}
+
+.social, .subscribe{
+    align-self:flex-end;
+    margin-bottom:30px;
+}
+a:link, a:visited{
+    text-decoration: none;
 }
