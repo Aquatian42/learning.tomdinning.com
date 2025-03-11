@@ -1,0 +1,25 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:large;
+    background-color: aqua;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+}
+
+.back{
+    text-align: center;
+    padding:3px;
+}
+.back a{
+    background-color: red;
+    border-radius: 5px; 
+    border:black dotted;
+    border-width: 2px;
+}
