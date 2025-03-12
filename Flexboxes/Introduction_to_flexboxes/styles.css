@@ -142,17 +142,30 @@ a:link, a:visited{
     width:90%
 }
 .content-useful{
+    text-align: center;
+    width:90%;
+    border: #fff solid 2px;
+    padding: 2px;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 .very-useful{
+    margin:0 10px;
     border: #fff solid 2px;
     background: #D6E9FE;
-    Flex: 1;
+    Flex: 7;
 }
 .small{
+    margin:0 10px;
     border: #fff solid 2px;
-    background-color: aquamarine;
+    background-color:aqua;
+    FLex:3;
+}
+
+.smaller{
+    margin:0 10px;
+    border: #fff solid 2px;
+    background-color:aqua;
     FLex:1;
 }
