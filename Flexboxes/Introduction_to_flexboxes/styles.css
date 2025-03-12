@@ -151,6 +151,7 @@ a:link, a:visited{
 
 }
 .very-useful{
+    align-self: center;
     margin:0 10px;
     border: #fff solid 2px;
     background: #D6E9FE;
