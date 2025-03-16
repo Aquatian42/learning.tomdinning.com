@@ -8,7 +8,7 @@ body{
 a:link, a:visited{
     text-decoration: none;
 }
-
+/* menu */
 .menu-container{
     display:flex;
     justify-content: center;
@@ -55,7 +55,7 @@ a:link, a:visited{
     align-self:flex-end;
     margin-bottom:30px;
 }
-
+/* footer content */
 .footer-continer{
     display:flex;
     color: #fff;
@@ -70,5 +70,48 @@ a:link, a:visited{
 }
 
 .back-button{
-    
+    background: #D6E9FE;
+    border-radius: 5px;
+}
+
+.back-button a{
+    padding:3px
+}
+
+/* Body content */
+.body-container{
+    display:flex;
+    justify-content: center;
+}
+.body{
+    width:80%;
+    display:flex;
+    justify-content: space-between;
+    padding:40px;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+}
+.body div{
+    margin:10px;
+    width:150px;
+    display:block;
+    padding:20px;
+    background: #5995DA;
+    border: #0077ff solid 2px;
+}
+
+.body .one{
+    flex:1 1 0
+}
+
+.body .two{
+    flex:0 0 auto
+}
+
+.body .three{
+    flex:1 0 auto
+}
+
+.body .four{
+    flex:2 2 0;
 }
