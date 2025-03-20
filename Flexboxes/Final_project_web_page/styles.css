@@ -1,0 +1,124 @@
+.everything{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-family: "Roboto",sans-serif;
+}
+
+.content-container{
+    flex:1 1 0;
+    margin:50px 10vw;
+    display:flex;
+    padding:16px;
+}
+
+.header{
+    width:100%;
+    background-color: #1F2937;
+    display:flex;
+    justify-content: center;
+    color: #F9FAF8;
+}
+
+.header .content-container{
+    justify-content: space-between;
+    align-items:center;
+}
+
+.logo{
+    font-weight:bold;
+    font-size: 24px;
+}
+
+.right-links a{
+    margin:10px;
+    color:#E5E7EB;
+    text-decoration: none;
+    font-size:18px;
+}
+
+.sect1{
+    width:100%;
+    background-color: #1F2937;
+    display:flex;
+    justify-content: center;
+    color: #F9FAF8;
+}
+
+.sect1 .content-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 32px;
+}
+
+.sect1 .content-container .left-content, .sect1 .content-container .right-content{
+    flex:1 1 0
+}
+
+.sect1 .content-container .left-content .title{
+    font-size: 48px;
+    font-weight:900;
+}
+
+.sect1 .content-container .left-content .description{
+    font-size: 18px;
+    color:#E5E7EB;
+}
+
+.sect1 .content-container .left-content .sign-up{
+    font-size: 18px;
+    background-color:#3882F6;
+    color: #E5E7EB;
+    border:none;
+    border-radius: 8px;
+    margin-top:16px;
+    padding:8px 32px;
+}
+
+.sect1 .content-container .right-content {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 18px;
+    color:#E5E7EB;
+    background-color: grey;
+}
+
+.sect2{
+    width:100%;
+    background-color:#F9FAF8;
+    display:flex;
+    justify-content: center;
+}
+
+.sect2 .content-container{
+    flex-direction: column;
+    align-items: center;
+    gap:48px;
+}
+.sect2 .content-container .title{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    text-align: center;
+}
+
+.sect2 .content-container .box-holder{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    gap: 48px;
+}
+
+.sect2 * .box{
+    width:160px;
+    text-align: center;
+}
+
+.sect2 * .image-placeholder{
+    height:160px;
+    border: 2px #3882F6 solid;
+    border-radius: 8px;
+
+}
