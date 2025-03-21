@@ -49,8 +49,15 @@ body{
     height: auto;
 }
 
+.header * .right-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
 .header * .right-links a{
-    margin:10px;
     color:#E5E7EB;
     text-decoration: none;
     font-size:18px;
