@@ -18,6 +18,7 @@ body{
 }
 
 .content-container{
+    border:red 2px solid;
     flex:1 1 0;
     margin:32px 10vw;
     display:flex;
@@ -78,7 +79,7 @@ body{
 
 .main * .sectionbox{
     flex:0;
-    width:256px;
+    width:512px;
     border: 2px grey solid;
     border-radius: 16px;
     background-color: rgba(128, 128, 128, 0.5);
