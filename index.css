@@ -13,10 +13,6 @@ body{
     font-family: "Roboto",sans-serif;
 }
 
-.sect{
-    width:100%;
-}
-
 .content-container{
     border:red 2px solid;
     flex:1 1 0;
@@ -65,6 +61,7 @@ body{
 
 .main{
     width:100%;
+    height:auto;
     background-color: #254e88;
     display:flex;
     justify-content: center;
