@@ -36,7 +36,6 @@ body{
     border:red 2px solid;
     justify-content: space-between;
     align-items:center;
-    flex-wrap: wrap;
 }
 
 .header * .logo{
