@@ -19,7 +19,7 @@ body{
 
 .content-container{
     flex:1 1 0;
-    margin:50px 10vw;
+    margin:32px 10vw;
     display:flex;
     padding:16px;
 }
