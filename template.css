@@ -33,7 +33,6 @@ body{
 }
 
 .header .content-container{
-    border:red 2px solid;
     justify-content: space-between;
     align-items:center;
 }
