@@ -60,6 +60,7 @@ body{
 .header * .right-links a{
     color:#E5E7EB;
     text-decoration: none;
+    text-align: center;
     font-size:18px;
 }
 
