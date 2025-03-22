@@ -55,6 +55,7 @@ body{
 .header * .logo * img{
     width:auto;
     max-height: 50px;
+    border-radius: 16px;
 }
 
 .header * .right-links{
