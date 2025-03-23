@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/xicon" href="/logo.webp">
+</head>
+
+<body>
+
+<div class="header section">
+    <div class="content-container">
+        <div class="logo"><a href="/"><img src="/logo.webp" alt=""></a></div>
+        <div class="right-links">
+            <a href="/HTML_foundations">HTML foundations</a>
+            <a href="/CSS_foundations/">CSS foundations</a>
+            <a href="/Flexboxes/">Flexboxes</a>
+            <a href="/Javascript/">Javascript</a>
+        </div>
+    </div>
+</div>
+
+<div class="title section">
+    <div class="content-container">
+        JavaScript basics
+    </div>
+</div>
+
+<div class="main section">
+    <div class="content-container">
+        <div class="first">This div contains a script that sets a name and surname variable and then prints them to the console. 
+            It then changes the variables and prints them again.
+            <script>
+                let first_name = "Tom";
+                let surname = "Dinning";
+                console.log("name = ", first_name, surname);
+                first_name = "Bobby";
+                surname = "Smith";
+                console.log("name = ", first_name, surname);
+            </script>
+        </div>
+
+        <div class="second">Constants can be declared in javascript using const. 
+            These are like variables but are immutable. Trying to reassign a constant will result in an error.
+            <script>
+                const tau = 6.28;
+                console.log(tau);
+            </script>
+        </div>
+
+        <div>Javascript uses (), /, *, +, -, **, %, ==, <, >, != in the same way as python.
+            <script>
+                console.log(3 != 3.1);
+            </script>
+        </div>
+
+        <div>
+            JavaScript will try to convert strings that are just numbers into numbers for most numeric operations.
+             The exception is the + operator because that is also the concatenation operator. 
+             NaN is a number type which indicates that a number is not a legal number such as when dividing a number by a string.
+             Numbers can be converted into different bases using <em>number.toString(base)</em> eg: <em>10.toString(2) = 1010</em>.
+             == checks if two numbers are equal === checks if they are strictly equal (They have the same type and value.) 3=="3" True 3==="3" False.
+        </div>
+
+        <div>Assignments for this lesson.
+            <script>
+                console.log(23 + 97);
+                // 
+                console.log(1 + 34 + 564 + 345 + 543 + 2134);
+                // 
+                console.log((4 + 6 + 9) / 77);
+                //
+                let a = 10;
+                console.log(a);
+                a = 34;
+                console.log(a);
+                let b = 7 * a;
+                console.log(b);
+                //
+                const max = 57;
+                let actual = max - 13;
+                let percentage = (actual / max) * 100;
+                console.log(percentage);
+                //
+                console.log(3=="3")
+            </script>
+        </div>
+    </div>
+</div>
+
+<div class="footer section">
+    <div class="content-container">
+        <div class="footer-text">Copyright &copy Tom Dinning 2025</div>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>
