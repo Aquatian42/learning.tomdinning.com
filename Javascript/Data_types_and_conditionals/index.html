@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data types and conditionals</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../subfolders.css">
     <link rel="icon" type="image/xicon" href="/logo.webp">
 </head>
 
@@ -30,8 +30,85 @@
 
 <div class="main section">
     <div class="content-container">
+        <div>There are 8 basic types of data in JavaScript. 
+            These can all be stored in variables without needing to declare the type
+            making JavaScript a dynamically-typed language.
+        </div>
         <div>
-            
+            <strong>Numbers</strong> represent any numeric value, there is no distinction between Floats and Ints.
+            Alongside these, there are the "special numberic valuse" NaN, Infinity and -Infintiy.
+            Numbers can only be safely used up to 2<sup>53</sup> - 1 
+            because they are stored as 64 bit floating point numbers with an 11 bit 
+            exponent and a 53 bit mantissa.
+        </div>
+        <div>
+            Numbers larger than this can be stored precicely using <strong>BigInt</strong>. This can be done by appending n 
+            to the end of the number. Eg: 12345678900987654321n or using BigInt() eg: BigInt(12345678900987654321).
+            Operations involgving BigInts always return BigInts so, if nececary, they can be converted 
+            using Number()
+        </div>
+        <div>
+            <strong>Strings</strong> are strings of characters surrounded by quotes, they can be concatenated using the + operator.
+            Single quotes (''), double quotes ("") or backticks (``) can be used. single and double quotes both declare
+            normal strings. Backticks declare <em>template literals</em>, strings that can have variables embedded inside of them using ${} eg: 
+            `Hello ${name} you were born in {2025 - age}` They also respect line breaks so you don't need to use the \n character.
+            Quotes con be included inside of strings by <em>escaping</em> the quote by putting a backslash before it eg:
+            'I\'m not going in there!'
+            Strings are immutable.
+            <script>
+                let string1 = "Hello World!";
+                let length = string1.length;
+                console.log(length);
+                
+                console.log(`The character code of character 1 of ${string1} is ${(string1.charCodeAt(0)).toString(2)}`);
+                console.log(`Character 1 of ${string1} is ${string1.at(0)}`);
+                console.log(`Character 1 of ${string1} is ${string1[0]}`);
+                console.log(`${string1} sliced 0-5 is ${string1.slice(0,5)}`);
+                console.log(`${string1} from -5 to the end is ${string1.slice(-5)}`);
+                console.log(`${string1} in uppercase is ${string1.toUpperCase()}`);
+                console.log(`${string1} padded up to length 20 with 0s at the start is ${string1.padStart(20,"0")}`);
+                console.log(`${string1} repeated three times is ${string1.repeat(3)}`)
+                console.log(`${string1} with "Hello" replaced by "Fuck off" is ${string1.replace("Hello","Fuck off")}`)
+            </script>
+        </div>
+        <div>
+            <strong>Boolean</strong> data can only take the values <em>true</em> and <em>false</em>. 
+            They can be assigned directly or come as a result of comparisons.
+        </div>
+        <div>
+            <strong>null</strong> is a datatype of its own. It represents an unknown or empty value. 
+            It is usually assigned to variables that do not yet contain any data.
+        </div>
+        <div>
+            <strong>unassigned</strong> is similar to <em>null</em> in that it is the value given to variables with no data. 
+            It is different because it is just the default value such as when a variable is declared eg: let variable;
+            <em>variable</em> would be <em>unassigned</em>. 
+        </div>
+        <div>
+            <strong>Objects</strong> are used to store complex collections of data. All other datatypes are simple.
+        </div>
+        <div>
+            <strong>typeof</strong> <em>element</em> will return the type of the element.
+        </div>
+        <div>
+            Conditionals use if, else and else if. If and else if require brackets around the condition that they operate under.
+            These all require curly braces to enclose the code that will execute if the outcome is true.
+            <script>
+                let three
+                if (3 == (2.1)){
+                    three = true
+                } else {
+                    three = false
+                }
+                console.log(three)
+            </script>
+        </div>
+        <div>Logical operators operators that return true or false. JavaScript uses "||" for <em>OR</em>,
+            "!" for <em>NOT</em> and "&&" for <em>AND</em> (Typed ALT + 038).
+        </div>
+        <div>
+            The <strong>Ternary Operator</strong> can be used instead of an if else statement.
+            variable == true ? variable = false : variable = true
         </div>
     </div>
 </div>
