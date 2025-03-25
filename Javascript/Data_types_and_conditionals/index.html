@@ -110,6 +110,255 @@
             The <strong>Ternary Operator</strong> can be used instead of an if else statement.
             variable == true ? variable = false : variable = true
         </div>
+        <div>
+            The <strong>switch</strong> statement can replace if ... else if statements.
+            switch (variable) { case 1: variable = 2; case 2: variable = 1;} 
+            This checks if <em>variable</em> is 1 and if it is, it changes <em>variable</em> to 2. 
+            It then checks if <em>variable</em> is 2 and if it is, it changes it to 1.
+            This uses the === operator so 1 != "1"
+        </div>
+        <div>
+            Excercises
+            <a href="enter a number/">excercise 2</a>
+            <script>
+                // excercise 1 //
+                function troubleshooting() {
+                const a1 = 1;
+                const b1 = 1;
+
+                let result;
+
+                // Edit between these lines
+                // =================================
+                result = a1 + b1;
+
+                // =================================
+                return result;
+                }
+                
+                console.log(troubleshooting())
+            </script>
+            <script>
+                // excercise 3 //
+                const a = 1 + 8
+                const b = 22 * 3
+                const c = 5 % 4
+                const d = a - 17
+                const e = a + b + c + d
+
+                if(a === 9) {
+                    console.log("'a' is correct!")
+                } else {
+                    console.log(`'a' is incorrect, got ${a}, expected 9`)
+                }
+                console.log("\n");
+
+                if(b === 66) {
+                    console.log("'b' is correct!")
+                } else {
+                    console.log(`'b' is incorrect, got ${b}, expected 66`)
+                }
+                console.log("\n");
+
+                if(c === 1) {
+                    console.log("'c' is correct!")
+                } else {
+                    console.log(`'c' is incorrect, got ${c}, expected 1`)
+                }
+                console.log("\n");
+
+                if(d === -8) {
+                    console.log("'d' is correct!")
+                } else {
+                    console.log(`'d' is incorrect, got ${d}, expected -8`)
+                }
+                console.log("\n");
+
+                if(e === 68) {
+                    console.log("'e' is correct!")
+                    console.log("\n Congrats! You've solved them all, you may move onto the next lesson")
+                } else {
+                    console.log(`'e' is incorrect, got ${e}, expected 68`)
+                }
+            </script>
+            <script>
+                // excercise 4 //
+
+                /**
+                 Be sure to uncomment the items under each step below the editable section. Be sure to comment out the entire last step. If your code fails to run, or you see a "ReferenceError" in the console, make sure you have completed all of the objectives 
+                
+                Don't forget you can put "console.log" anywhere to see what your values are at any time.
+                
+                
+                
+                    Step 1:
+                    Take a look at this code and try to predict what it's going to do before running it...
+                    
+                    After making your guess, press 'run' at the top and take a look at the output in the console. If you were surprised by anything, go back and look at the code to see what's going on.
+                    
+
+
+
+                    Step 2:
+                    Once you have a good handle on the code snippet, delete the code then follow the following instructions between the lines and try to recreate the snippet on your own.
+                    
+                    ---------------------------------------------------------------
+                    
+                    4 variables: first name, last name, current year, and birth year.
+                    a 5th variable (greeting) that is constructed from the previous 4, it should contain a greeting with the person's full name and their age.
+                    print the greeting with console.log
+                    
+                    ---------------------------------------------------------------
+                    
+                    Once you have your version of the code working let's go back over it and edit it to make it easier to read.  After each step, make sure to run the code to make sure the code still works!
+
+
+
+
+
+                    Step 3:
+                    Add 2 more variables: "fullName" and "age"
+
+                    Edit the greeting string to use fullName and age instead of doing the calculations in the string itself. (the greeting should look something like this: "Hello, my name is " + fullName)
+
+                    Do NOT simply type the full name and age into the new variables, but set them using the calculations that were originally being done in the greeting.
+                    
+                    ===== NOTE ====
+                    In order to make the tests pass you will need to use these exact values for the years and names.  The wording needs to be exact.  If the tests fail, check spacing and punctuation:
+                    
+                    birthYear = 1948
+                    thisYear = 1965
+                    firstName = Carlos
+                    lastName = Stevenson
+
+                    The greeting should say "Hello! My name is Carlos Stevenson and I am 17 years old."
+                */
+
+                // Edit below this line =============
+                const birthYear = 1948;
+                const thisYear = 1965;
+                const firstName = "Carlos";
+                const lastName = "Stevenson";
+                const age = (thisYear - birthYear);
+                const fullName = firstName + " " + lastName
+
+                const greeting = "Hello! My name is " + firstName + " " + lastName + " and I am " + age + " years old.";
+
+                console.log(greeting);
+
+
+
+
+                // Edit above this line ==============
+
+
+                // Testing your code
+
+                // Step 2: 
+
+                let testGroup = "b";
+
+                
+
+
+                // Step 3: (Be sure to comment out Step 2)
+
+                // module.exports = {
+                // 	testGroup: "b",
+                // 	greeting,
+                // 	birthYear,
+                // 	thisYear,
+                // 	firstName,
+                // 	lastName,
+                // 	fullName,
+                // 	age
+                // }
+                
+
+
+                let errored = false;
+
+                console.log("\n---------------------------------\n\n")
+
+                if(testGroup === "a") {
+                    if(birthYear !== 1948) {
+                        console.error(`birthYear is incorrect, it's currently: "${birthYear}"`);
+                        errored = true;
+                    }
+                    
+                    if(thisYear !== 1965) {
+                        console.error(`thisYear is incorrect, it's currently: "${thisYear}"`);
+                        errored = true;
+                    }
+                    
+                    if(firstName !== "Carlos") {
+                        console.error(`firstName is incorrect, it's currently: "${firstName}"`);
+                        errored = true;
+                    }
+                    
+                    if(lastName !== "Stevenson") {
+                        console.error(`lastName is incorrect, it's currently: "${lastName}"`);
+                        errored = true;
+                    }
+                    
+                    if(greeting !== "Hello! My name is Carlos Stevenson and I am 17 years old.") {
+                        console.error(`greeting is incorrect, it's currently: "${greeting}"`);
+                        errored = true;
+                    }
+                }
+
+                if(testGroup === "b") {
+                    if(birthYear !== 1948) {
+                        console.error(`birthYear is incorrect, it's currently: "${birthYear}"`);
+                        errored = true;
+                    }
+                    
+                    if(thisYear !== 1965) {
+                        console.error(`thisYear is incorrect, it's currently: "${thisYear}"`);
+                        errored = true;
+                    }
+                    
+                    if(firstName !== "Carlos") {
+                        console.error(`firstName is incorrect, it's currently: "${firstName}"`);
+                        errored = true;
+                    }
+                    
+                    if(lastName !== "Stevenson") {
+                        console.error(`lastName is incorrect, it's currently: "${lastName}"`);
+                        errored = true;
+                    }
+
+                    if(age !== 17) {
+                        console.error(`age is incorrect, it's currently: "${age}"`);
+                        errored = true;
+                    }
+
+                    if(fullName !== "Carlos Stevenson") {
+                        console.error(`fullName is incorrect, it's currently: "${fullName}"`);
+                        errored = true;
+                    }
+                    
+                    if(greeting !== "Hello! My name is Carlos Stevenson and I am 17 years old.") {
+                        console.error(`greeting is incorrect, it's currently: "${greeting}"`);
+                        errored = true;
+                    }
+                }
+
+                if(!errored && testGroup === "a") {
+                    console.log("Congrats! Move onto the next step!");
+                } else if (errored && testGroup === "a") {
+                    console.log("Try again")
+                }
+
+                if(!errored && testGroup === "b") {
+                    console.log("Congrats! Move onto the next lesson!");
+                } else if (errored) {
+                    console.log("Try again")
+                }
+
+                console.log("\n---------------------------------\n\n")
+            </script>
+        </div>
     </div>
 </div>
 
