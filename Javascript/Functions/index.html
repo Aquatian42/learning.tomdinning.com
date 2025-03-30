@@ -85,8 +85,14 @@
                 console.log(doubled);
 
                 // trying it out //
-                const squareNumber = number => {console.log(number ** 2);}
+                const squareNumber = number => {console.log(number ** 2);};
                 squareNumber(16)
+
+                let exponent = (number,exponent) => (number ** exponent)
+                console.log(exponent(10,300))
+
+                let sayHi = () => "Hello"
+                console.log(sayHi())
             </script>
         </div>
         <div>
@@ -99,6 +105,19 @@
             Keeping variables in functions can help to mitigate these issues.
             Functions can access variables that have been declared outside of them, higher up.
             These are called global variables if they are outside of all functions.
+        </div>
+        <div>
+            functions can be passed into other functions as arguments. These can then be run from within the function that they were passed to.
+            Functions can be defined via expressions or declarations. If they are called with an expression, where the function is assigned to a variable, 
+            They are available in the code after this creation. 
+            If they are created using declarations, they can be called from anywhere in the code,
+            provided that the scope is correct. This can be mitigated by using expressin since the variable can be created at a higher scope and reassigned.
+            <script>
+                // expression // 
+                let expression = function (inpt) {console.log(`the input was ${inpt}`)};
+                // Declaration //
+                function declaraton(inpt) {console.log(`the input was ${inpt}`)}
+            </script>
         </div>
     </div>
 </div>
