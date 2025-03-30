@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <link rel="stylesheet" href="../subfolders.css">
+    <link rel="icon" type="image/xicon" href="/logo.webp">
+    <script src="functions.js"></script>
+</head>
+
+<body>
+
+<div class="header section">
+    <div class="content-container">
+        <div class="logo"><a href="/"><img src="/logo.webp" alt=""></a></div>
+        <div class="right-links">
+            <a href="/HTML_foundations">HTML foundations</a>
+            <a href="/CSS_foundations/">CSS foundations</a>
+            <a href="/Flexboxes/">Flexboxes</a>
+            <a href="/Javascript/">Javascript</a>
+        </div>
+    </div>
+</div>
+
+<div class="title section">
+    <div class="content-container">
+        JavaScript basics
+    </div>
+</div>
+
+<div class="main section">
+    <div class="content-container">
+
+        <div>
+            Functions are blocks of code that have been assigned a name, 
+            so only the name needs to be called to run that block. 
+            Functions can be defined in one place on a webpage and called elsewhere.
+            The function in this block is defined in javascript.js which is called in the head.
+            Parameters are the data that we declare must be passed to a function, 
+            and arguments are the real data that we pass into each instance of a function.
+            <script>console.log(favoriteAnimal('Goat'))</script>
+        </div>
+
+        <div>
+            <p>Functions are declared like this:</p>
+            <p><em>function new_fuinction(parameter1,parameter2) {</em></p>
+            <p>    <em>do things };</em></p>
+            <p>And called with <em>new_function(argument1,argument2);</em></p>
+        </div>
+
+        <div>
+            default values can be assigned to parameters using new_function(parameter1 = default_value,);
+            when calling this function, the argument for parameter1 can be left empty and will default to default_value.
+        </div>
+
+        <div>
+            anonymous functions can be created without names by going <em>function (parameters)</em>
+            These can be created and passed into other functions in one go.
+            <script>
+                // arrow function //
+                function functin(parameter,funct){
+                    if (parameter){
+                        console.log(funct)
+                    }
+                    else{
+                        console.log(false)
+                    }
+                };
+
+                let noise = "beep";
+
+                const funct = noise => noise;
+
+                functin(true,funct(noise));
+
+                functin(false,funct(noise));
+                
+                
+                // test //
+                const originals = [1, 2, 3];
+
+                const doubled = originals.map(item => item * 2);
+
+                console.log(doubled);
+
+                // trying it out //
+                const squareNumber = number => {console.log(number ** 2);}
+                squareNumber(16)
+            </script>
+        </div>
+        <div>
+            <strong>scope</strong> is very importaant for functions in JavaScript.
+            Variables, functions etc defined in a function are local to that function
+            and can't be accessed from elsewhere in the code. 
+            Variables can only be declared once son if importing multiple js files, 
+            it is important ot have different vartiale names. Functions, however, 
+            can be redeclared and will be overwritten. 
+            Keeping variables in functions can help to mitigate these issues.
+            Functions can access variables that have been declared outside of them, higher up.
+            These are called global variables if they are outside of all functions.
+        </div>
+    </div>
+</div>
+
+<div class="footer section">
+    <div class="content-container">
+        <div class="footer-text">Copyright &copy Tom Dinning 2025</div>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>
