@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript basics</title>
+    <link rel="stylesheet" href="../subfolders.css">
+    <link rel="icon" type="image/xicon" href="/logo.webp">
+    <script src="Arrays_and_Loops.js"></script>
+</head>
+
+<body>
+
+<div class="header section">
+    <div class="content-container">
+        <div class="logo"><a href="/"><img src="/logo.webp" alt=""></a></div>
+        <div class="right-links">
+            <a href="/HTML_foundations">HTML foundations</a>
+            <a href="/CSS_foundations/">CSS foundations</a>
+            <a href="/Flexboxes/">Flexboxes</a>
+            <a href="/Javascript/">Javascript</a>
+        </div>
+    </div>
+</div>
+
+<div class="title section">
+    <div class="content-container">
+        Arrays and Loops
+    </div>
+</div>
+
+<div class="main section">
+    <div class="content-container">
+
+        <div>
+            <strong>Arrays</strong> are lists of items that are stored to variables. 
+            They can be declared using: <em>const name = [item1, item2, item3]</em>
+            It is common to declare arrays as constants not variables in javascript.
+            You can space out the items with as many spaces or line breaks as wanted.
+            Arrays are dynamic and mutable in javascript, so they can be changes and the 
+            length can be changed after declaration, even if they are declared as constants.
+            One array can contain multiple data types, even other arrays or objects!
+            <script>
+                const array1 = ["car","bus","plane","train"];
+                const array2 = [
+                    "car",
+                    "bus", "plane",       "train"
+                ];
+                const array3 = [];
+                array3[0] = "car";
+                array3[1] = "bus";
+                array3[2] = "plane";
+                array3[3] = "train";
+                console.log(array1)
+                console.log(array2)
+                console.log(array3)
+            </script> 
+        </div>
+
+        <div>
+            Array elements can be accessed using indicies, <em>myArray[0]</em> would return 
+            the first element of <em>myArray</em>. This allows you to loop over them.
+        </div>
+
+        <div>
+            There are many <strong>built in methods</strong> for arrays in javascript. 
+            <em>length</em> is a property of arrays and returns the length of that array.
+            THe last element of an array can beaccessed by getting it's length and subtracting 
+            one for the index. <em>.push(element)</em> is used to add elements to the end of an array.
+
+            <script>
+                const myArray = [1,2,3,4,5,6,"hello"]
+                console.log("the length of myaArray is",myArray.length)
+                console.log(myArray[myArray.length - 1])
+                myArray.push(1)
+                console.log(myArray)
+            </script>
+        </div>
+    </div>
+</div>
+
+<div class="footer section">
+    <div class="content-container">
+        <div class="footer-text">Copyright &copy Tom Dinning 2025</div>
+    </div>
+</div>
+</body>
+
+</html>
