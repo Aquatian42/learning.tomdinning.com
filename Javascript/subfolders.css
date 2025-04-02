@@ -73,7 +73,8 @@ body{
 .title.section{
     margin-bottom: auto;
     font-size: 48px;
-    background-color: #254e88b2; ;
+    background-color: #254e88b2; 
+    text-align:center;
 }
 
 .title .content-container{
