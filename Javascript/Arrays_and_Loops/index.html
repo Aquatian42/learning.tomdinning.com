@@ -59,7 +59,8 @@
 
         <div>
             Array elements can be accessed using indicies, <em>myArray[0]</em> would return 
-            the first element of <em>myArray</em>. This allows you to loop over them.
+            the first element of <em>myArray</em>. This allows you to loop over them.  
+            You can also change specific indicies using <em>myArray[index] = newValue</em>
         </div>
 
         <div>
@@ -67,7 +68,11 @@
             <em>length</em> is a property of arrays and returns the length of that array.
             THe last element of an array can beaccessed by getting it's length and subtracting 
             one for the index. <em>.push(element)</em> is used to add elements to the end of an array.
+            likewise, <em>.pop()</em> removes the last element from an array. <em>.shift()</em> 
+            removes the first element and <em>.unshift(item)</em> adds the specified item to the beginning of the array
             <em>indexOf(element)</em> will return the first index of that item in an array.
+            <em>join(seperator)</em> will join all of the items in an array into a single string,
+            seperated by whatever you have specified.
             <script>
                 const myArray = [1,2,3,4,5,6,"hello"]
                 console.log("the length of myaArray is",myArray.length)
@@ -75,6 +80,58 @@
                 myArray.push(1)
                 console.log(myArray)
                 console.log(myArray.indexOf(1))
+                myArray.pop()
+                console.log(myArray.join(", "))
+            </script>
+        </div>
+
+        <div>
+            The most common types of loops are for and while loops, 
+            these can do the same things as each other but are formatted differently. 
+            They both run over and over until a certian condition is met. 
+            There are examples in this div's script element.
+            <script>
+                let forArray =[]
+                for (let i = 0; (i<100);i++){
+                    forArray.push(i)
+                }
+                //these do the same thing
+                let whileArray = [];
+                let i = 0;
+                while (i<100){
+                    whileArray.push(i)
+                    i++
+                }
+                console.log(forArray);
+                console.log(whileArray);
+            </script> 
+        </div>
+
+        <div>
+            Arrays can be used to loop over the items of an array using <em>for variableName of arrayName</em>
+            <script>
+                for (item of forArray){
+                    if (item % 7 == 0){
+                        console.log(item)
+                    }
+                }
+            </script>
+        </div>
+
+        <div>
+            Maps can be used to return an array that has had a particular function applied to every item in that array.
+            Filters are similar but are passed a function which returns a boolean, the new array contains only items for 
+            which that boolean was true.
+            <script>
+                const removeLetterOne = (string) => string.slice(1);
+                const arrayOfCats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+                const misspelledCats = arrayOfCats.map(removeLetterOne)
+                console.log(misspelledCats)
+
+                // logs an array of items of arrayOfCats whose second letter is "i"
+                const secondLetterI = (string) => (string[1] == "i")
+                const secondLetterICats = arrayOfCats.filter(secondLetterI);
+                console.log(secondLetterICats)
             </script>
         </div>
     </div>
