@@ -7,7 +7,7 @@ let outputDiv = document.querySelector('.task1');
 for (let i = 10;i > 0; i--){
     const div = document.createElement('p');
     div.textContent = i
-    outputDiv.appendhild(div)
+    outputDiv.appendChild(div)
 }
 
   
