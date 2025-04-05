@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation and Events</title>
+    <link rel="stylesheet" href="../subfolders.css">
+    <link rel="icon" type="image/xicon" href="/logo.webp">
+    <script src="Excercises.js" defer></script>
+</head>
+
+<body>
+
+<div class="header section">
+    <div class="content-container">
+        <div class="logo"><a href="/"><img src="/logo.webp" alt=""></a></div>
+        <div class="right-links">
+            <a href="/HTML_foundations">HTML foundations</a>
+            <a href="/CSS_foundations/">CSS foundations</a>
+            <a href="/Flexboxes/">Flexboxes</a>
+            <a href="/Javascript/">Javascript</a>
+        </div>
+    </div>
+</div>
+
+<div class="title section">
+    <div class="content-container">
+        DOM Manipulation and Events
+    </div>
+</div>
+
+<div class="main section">
+    <div class="content-container test">
+
+        <div class="div1">
+            The document object model shows how elements on a HTML webpage related to 
+            each other. In Javascript, you can use CSS-style selectors or relationship 
+            properties to refrence desired nodes in the DOM. Relational selectors include
+            firstElementChild and lastElementChild. 
+            <script>
+                // These all select this current div and log the text from it to the console
+                let container = document.querySelector(".div1")
+                console.log(container.textContent)
+                container = document.querySelector("div.div1")
+                console.log(container.textContent)
+                container = document.querySelector(".test")
+                div1 = container.firstElementChild.textContent
+                console.log(div1)
+            </script> 
+        </div>
+
+        <div class="div2">
+            <em>element.querySelector(selectors)</em> will return a NodeList containing 
+            refrences to every match for the selectors, unlike 
+            <em>element.querySelector(selector)</em> which will return only the first 
+            match for the given selector. This NodeList can be converted to an array if required,
+            using <em>Array.from(desiredNodeList)</em>.
+            <script>
+                let selected = document.querySelectorAll(".section")
+                console.log(selected)
+                // logs the text from every element of class "section"
+                for (let i = 0; i < selected.length; i++){
+                    console.log(selected[i].textContent)
+                }
+            </script>
+        </div>
+
+        <div class="div3">
+            Element objects can also be created with <em>document.createElement(type)</em>; 
+            these still need to be added to the dom using <em>aNode.appendChild(childNode)</em>
+            or <em>aNode.insertBefore(newNode, referenceNode)</em> They can be removed using
+            <em>aNode.removeChild(childNode)</em>.
+            <script>
+                const mainNode = document.querySelector(".test");
+                const newchild = document.createElement("div");
+                newchild.textContent = "Hello, World!"
+                mainNode.appendChild(newchild);
+                console.log(mainNode.removeChild(newchild));
+                mainNode.appendChild(newchild);
+            </script>
+        </div>
+
+        <div class="div3">
+            More than just the text can be changed, using .style or .setAttrribute lets you add any CSS styles 
+            to your node. There is also getAttribute and removeAttribute. Classes can be edited with .classList
+
+            <script>
+                newchild.style.backgroundColor = "purple"
+                newchild.setAttribute("style","color:white; border:red 2px dashed; background-color:purple;")
+                newchild.setAttribute("class","wanker")
+                newchild.classList.remove("wanker")
+                newchild.classList.add("new","new2")
+            </script>
+        </div>
+
+        <div class="Excercise">
+
+        </div>
+    </div>
+</div>
+
+<div class="footer section">
+    <div class="content-container">
+        <div class="footer-text">Copyright &copy Tom Dinning 2025</div>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>
